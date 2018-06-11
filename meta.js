@@ -81,7 +81,7 @@ module.exports = {
     runner: {
       when: 'isNotTest && unit',
       type: 'list',
-      message: 'Pick a test runner',
+      message: '选择单元测试工具',
       choices: [
         {
           name: 'Jest',
