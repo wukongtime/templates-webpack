@@ -8,7 +8,7 @@ import router from './router'
 import 'babel-polyfill'
 
 // vuex store
-import store from './store/'
+// import store from './store/'
 
 // vuex
 import Vuex from 'vuex'
