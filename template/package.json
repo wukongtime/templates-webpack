@@ -25,8 +25,20 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.16.1",
+    "bootstrap": "^4.0.0",
+    "babel-polyfill": "^6.23.0",
+    "css-loader": "^0.25.0",
+    "echarts": "^3.3.2",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-axios": "^1.2.2",
+    "vue-router": "^3.0.1",
+    "vuex": "3.0.1",
+    "vuex-persistedstate": "^2.4.2"
   },
   "devDependencies": {
     {{#lint}}

@@ -32,47 +32,29 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: '项目名称:',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: 'Project description',
+      message: '项目描述:',
       default: 'A Vue.js project',
     },
     author: {
       when: 'isNotTest',
       type: 'string',
-      message: 'Author',
-    },
-    build: {
-      when: 'isNotTest',
-      type: 'list',
-      message: 'Vue build',
-      choices: [
-        {
-          name: 'Runtime + Compiler: recommended for most users',
-          value: 'standalone',
-          short: 'standalone',
-        },
-        {
-          name:
-            'Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere',
-          value: 'runtime',
-          short: 'runtime',
-        },
-      ],
+      message: '作者:',
     },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Use ESLint to lint your code?',
+      message: '是否使用ESLint规范你的代码?',
     },
     lintConfig: {
       when: 'isNotTest && lint',
       type: 'list',
-      message: 'Pick an ESLint preset',
+      message: '选择ESLint规范',
       choices: [
         {
           name: 'Standard (https://github.com/standard/standard)',
@@ -85,7 +67,7 @@ module.exports = {
           short: 'Airbnb',
         },
         {
-          name: 'none (configure it yourself)',
+          name: 'none (自己配置)',
           value: 'none',
           short: 'none',
         },
@@ -94,7 +76,7 @@ module.exports = {
     unit: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Set up unit tests',
+      message: '是否配置单元测试？',
     },
     runner: {
       when: 'isNotTest && unit',
@@ -127,22 +109,17 @@ module.exports = {
       when: 'isNotTest',
       type: 'list',
       message:
-        'Should we run `npm install` for you after the project has been created? (recommended)',
+        '选择包管理工具（推荐 npm）',
       choices: [
         {
-          name: 'Yes, use NPM',
+          name: '使用NPM',
           value: 'npm',
           short: 'npm',
         },
         {
-          name: 'Yes, use Yarn',
+          name: '使用Yarn',
           value: 'yarn',
           short: 'yarn',
-        },
-        {
-          name: 'No, I will handle that myself',
-          value: false,
-          short: 'no',
         },
       ],
     },
