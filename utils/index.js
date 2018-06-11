@@ -64,18 +64,16 @@ exports.runLintFix = function runLintFix(cwd, data, color) {
  */
 exports.printMessage = function printMessage(data, { green, yellow }) {
   const message = `
-# ${green('Project initialization finished!')}
+# ${green('项目初始化完成!')}
 # ========================
 
-To get started:
+运行项目:
 
   ${yellow(
     `${data.inPlace ? '' : `cd ${data.destDirName}\n  `}${installMsg(
       data
     )}${lintMsg(data)}npm run dev`
   )}
-  
-Documentation can be found at https://vuejs-templates.github.io/webpack
 `
   console.log(message)
 }
