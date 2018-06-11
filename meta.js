@@ -29,30 +29,26 @@ module.exports = {
   
   prompts: {
     name: {
-      when: 'isNotTest',
       type: 'string',
       required: true,
       message: '项目名称:',
     },
     description: {
-      when: 'isNotTest',
       type: 'string',
       required: false,
       message: '项目描述:',
       default: 'A Vue.js project',
     },
     author: {
-      when: 'isNotTest',
       type: 'string',
       message: '作者:',
     },
     lint: {
-      when: 'isNotTest',
       type: 'confirm',
       message: '是否使用ESLint规范你的代码?',
     },
     lintConfig: {
-      when: 'isNotTest && lint',
+      when: 'lint',
       type: 'list',
       message: '选择ESLint规范',
       choices: [
@@ -74,12 +70,11 @@ module.exports = {
       ],
     },
     unit: {
-      when: 'isNotTest',
       type: 'confirm',
       message: '是否配置单元测试？',
     },
     runner: {
-      when: 'isNotTest && unit',
+      when: 'unit',
       type: 'list',
       message: '选择单元测试工具',
       choices: [
@@ -101,12 +96,10 @@ module.exports = {
       ],
     },
     e2e: {
-      when: 'isNotTest',
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
     },
     autoInstall: {
-      when: 'isNotTest',
       type: 'list',
       message:
         '选择包管理工具（推荐 npm）',
