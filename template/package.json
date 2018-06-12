@@ -28,6 +28,12 @@
     "axios": "^0.16.1",
     "bootstrap": "^4.0.0",
     "babel-polyfill": "^6.23.0",
+    {{#if_eq desktopComponent "elementui"}}
+    "element-ui": "^2.3.7",
+    {{/if_eq}}
+    {{#if_eq desktopComponent "iview"}}
+    "iview": "^2.3.0",
+    {{/if_eq}}
     "vue": "^2.5.2",
     "vue-axios": "^1.2.2",
     "vue-router": "^3.0.1",
