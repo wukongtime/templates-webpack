@@ -24,72 +24,7 @@
 * extract-text-webpack-plugin 该插件的主要是为了抽离css样式,防止将样式打包在js中引起页面样式加载错乱的现象.
 * html-webpack-plugin  为html文件中引入的外部资源如script、link动态添加每次compile后的hash，防止引用缓存的外部文件问题;可以生成创建html入口文件，比如单页面可以生成一个html文件入口，配置N个html-webpack-plugin可以生成N个页面入口
 #### 项目结构
-──build                                        // 打包环境
-│ ├──build.js
-│ ├──check-versions.js
-│ ├──logo.png
-│ ├──utils.js
-│ ├──vue-loader.conf.js
-│ ├──webpack.base.conf.js
-│ ├──webpack.dev.conf.js
-│ └──webpack.prod.conf.js
-├──config                                   // 开发部署配置
-│ ├──dev.env.js
-│ ├──index.js
-│ ├──prod.env.js
-│ └──test.env.js
-├──src                                     // 项目源文件
-│ ├──api                                 // 请求接口
-│ │ └──request.js                  // axios封装
-│ ├──assets                           // 组件静态资源
-│ │ ├──img                           // 图片
-│ │ │ ├──401.gif                    
-│ │ │ ├──404.png
-│ │ │ └──404_cloud.png
-│ │ ├──styles                       // 样式
-│ │ │ └──main.css               // 全局样式
-│ │ └──logo.png
-│ ├──components                // 公共组件
-│ │ └──.gitkeep
-│ ├──router                           // 路由管理
-│ │ └──index.js
-│ ├──store                              // 状态管理
-│ │ └──.gitkeep
-│ ├──views                             // 业务组件
-│ │ ├──layout                        // 布局组件
-│ │ │ └──.gitkeep
-│ │ ├──pages                          // 基本组件
-│ │ │ ├──401.vue
-│ │ │ └──404.vue
-│ │ └──HelloWorld.vue
-│ ├──App.vue
-│ └──main.js                            // 入口文件
-├──static
-│ └──.gitkeep
-├──test                                     // 测试
-│ ├──e2e
-│ │ ├──custom-assertions
-│ │ │ └──elementCount.js
-│ │ ├──specs
-│ │ │ └──test.js
-│ │ ├──nightwatch.conf.js
-│ │ └──runner.js
-│ ├──unit
-│ │ ├──specs
-│ │ │ └──HelloWorld.spec.js
-│ │ ├──.eslintrc
-│ │ ├──jest.conf.js
-│ │ └──setup.js
-├──.babelrc                 // babel配置
-├──.editorconfig         // editor配置
-├──.eslintignore        // eslint配置
-├──.eslintrc.js             // eslint配置
-├──.gitignore
-├──.postcssrc.js        // postcss配置
-├──README.md
-├──index.html           // 项目首页
-├──package-lock.json // 依赖配置
-└──package.json
+![](./_image/1528780934071.jpg)
 
 
 
