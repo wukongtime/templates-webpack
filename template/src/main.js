@@ -23,7 +23,7 @@ import 'iview/dist/styles/iview.css'
 
 
 // 自定义全局css
-import './assets/style/main.css'
+import './assets/styles/main.css'
 
 // vuex
 import Vuex from 'vuex'
