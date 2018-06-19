@@ -115,29 +115,29 @@ module.exports = {
           short: 'yarn',
         },
       ],
-    },
-    desktopComponent: {
-      type: 'list',
-      message:
-        '选择组件',
-      choices: [
-        {
-          name: 'Element UI',
-          value: 'elementui',
-          short: 'elementui',
-        },
-        {
-          name: 'iView',
-          value: 'iview',
-          short: 'iview',
-        },
-        {
-          name: 'none (自己配置)',
-          value: 'noTest',
-          short: 'noTest',
-        }
-      ],
     }
+    // desktopComponent: {
+    //   type: 'list',
+    //   message:
+    //     '选择组件',
+    //   choices: [
+    //     {
+    //       name: 'Element UI',
+    //       value: 'elementui',
+    //       short: 'elementui',
+    //     },
+    //     {
+    //       name: 'iView',
+    //       value: 'iview',
+    //       short: 'iview',
+    //     },
+    //     {
+    //       name: 'none (自己配置)',
+    //       value: 'noTest',
+    //       short: 'noTest',
+    //     }
+    //   ],
+    // }
   },
   filters: {
     '.eslintrc.js': 'lint',

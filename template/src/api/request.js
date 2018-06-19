@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueAxios from 'vue-axios'
-import axios from '../config/http'
+import axios from '@/utils/fetch.js'
 // import store from '../store'
 // 导入封装的回调函数及配置信息
 // import settings from '../config/settings.js'
