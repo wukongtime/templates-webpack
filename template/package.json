@@ -28,12 +28,7 @@
     "axios": "0.17.1",
     "bootstrap": "^4.0.0",
     "babel-polyfill": "^6.23.0",
-    // {{#if_eq desktopComponent "elementui"}}
     "element-ui": "2.3.7",
-    // {{/if_eq}}
-    // {{#if_eq desktopComponent "iview"}}
-    // "iview": "^2.3.0",
-    // {{/if_eq}}
     "js-cookie": "2.2.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
