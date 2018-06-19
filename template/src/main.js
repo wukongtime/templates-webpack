@@ -34,8 +34,6 @@ import Vuex from 'vuex'
 // 全局使用bootstrap的css
 import 'bootstrap/dist/css/bootstrap.css'
 
-import 'normalize.css/normalize.css'// A modern alternative to CSS resets
-
 import '@/permission' // permission control
 
 import store from './store'

@@ -1,8 +1,9 @@
 import { login, logout, getInfo } from '@/api/login'
+import Cookies from 'js-cookie'
 
 const user = {
   state: {
-    token: Cookies.get(TokenKey),
+    token: Cookies.get('token'),
     name: '',
     avatar: '',
     roles: []
@@ -30,7 +31,7 @@ const user = {
       return new Promise((resolve, reject) => {
         login(username, userInfo.password).then(response => {
           const data = response.data
-          Cookies.set(TokenKey, data.token)
+          Cookies.set('token', data.token)
           commit('SET_TOKEN', data.token)
           resolve()
         }).catch(error => {
@@ -64,7 +65,7 @@ const user = {
         logout(state.token).then(() => {
           commit('SET_TOKEN', '')
           commit('SET_ROLES', [])
-          removeToken()
+          Cookies.remove('token')
           resolve()
         }).catch(error => {
           reject(error)
@@ -76,7 +77,7 @@ const user = {
     FedLogOut({ commit }) {
       return new Promise(resolve => {
         commit('SET_TOKEN', '')
-        Cookies.remove(TokenKey)
+        Cookies.remove('token')
         resolve()
       })
     }
