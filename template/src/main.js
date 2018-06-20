@@ -28,6 +28,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import '@/permission' // permission control
 
+import '@/assets/icons' // icon
+
 import store from './store'
 
 Vue.config.productionTip = false
