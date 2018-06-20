@@ -26,7 +26,7 @@ axios.interceptors.request.use(
         ...config.params
       }
     }
-    config.headers.Authorization = store.state.users.token
+    // config.headers.Authorization = store.state.users.token
     // config.headers.Accept = 'application/json'
     return config
   },

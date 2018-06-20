@@ -13,16 +13,8 @@ import 'babel-polyfill'
 // vuex store
 // import store from './store/'
 
-// element-ui
-// {{#if_eq desktopComponent "elementui"}}
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-// {{/if_eq}}
-
-// {{#if_eq desktopComponent "iview"}}
-// import iView from 'iview'
-// import 'iview/dist/styles/iview.css'
-// {{/if_eq}}
 
 
 // 自定义全局css
@@ -40,12 +32,8 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-// {{#if_eq desktopComponent "elementui"}}
 Vue.use(ElementUI, { size: 'small' })
-// {{/if_eq}}
-// {{#if_eq desktopComponent "iview"}}
-// Vue.use(iView)
-// {{/if_eq}}
+
 Vue.use(Vuex)
 
 /* eslint-disable no-new */

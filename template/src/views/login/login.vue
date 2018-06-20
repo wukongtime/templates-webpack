@@ -1,7 +1,7 @@
 <template>
   <div class="login-container">
     <el-form class="login-form" autoComplete="on" :model="loginForm" ref="loginForm" label-position="left">
-      <h3 class="title">vue-element-admin</h3>
+      <h3 class="title">管理系统登录</h3>
       <el-form-item prop="username">
         <span class="svg-container svg-container_login">
           <svg-icon icon-class="user" />
@@ -17,14 +17,10 @@
           <span class="show-pwd" @click="showPwd"><svg-icon icon-class="eye" /></span>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" style="width:100%;" :loading="loading" @click.native.prevent="handleLogin">
-          Sign in
+        <el-button size="medium" type="primary" style="width:100%;" :loading="loading" @click.native.prevent="handleLogin">
+          登   录
         </el-button>
       </el-form-item>
-      <div class="tips">
-        <span style="margin-right:20px;">username: admin</span>
-        <span> password: admin</span>
-      </div>
     </el-form>
   </div>
 </template>
@@ -32,7 +28,7 @@
 <script>
 export default {
   name: 'login',
-  data() {
+  data () {
     return {
       loginForm: {
         username: 'admin',
@@ -43,14 +39,14 @@ export default {
     }
   },
   methods: {
-    showPwd() {
+    showPwd () {
       if (this.pwdType === 'password') {
         this.pwdType = ''
       } else {
         this.pwdType = 'password'
       }
     },
-    handleLogin() {
+    handleLogin () {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           this.loading = true
@@ -71,7 +67,7 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss">
-$bg:#2d3a4b;
+$bg:#757575;
 $light_gray:#eee;
 
 /* reset element-ui css */
@@ -105,7 +101,7 @@ $light_gray:#eee;
 </style>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-$bg:#2d3a4b;
+$bg: #757575;
 $dark_gray:#889aa4;
 $light_gray:#eee;
 .login-container {
