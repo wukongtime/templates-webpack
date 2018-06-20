@@ -4,7 +4,7 @@
 // import Vue from 'vue'
 import axios from 'axios'
 import router from '../router'
-import store from '@/store'
+// import store from '@/store'
 // import qs from 'qs'
 
 axios.defaults.baseURL = process.env.BASE_API
